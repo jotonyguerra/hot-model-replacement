@@ -1,4 +1,5 @@
 require('./app.scss');
+
 var removeIframeFromElement = require('./removeIframeFromElement');
 var addIframeToElement = require('./addIframeToElement');
 
