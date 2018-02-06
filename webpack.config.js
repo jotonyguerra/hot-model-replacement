@@ -1,3 +1,5 @@
+
+var webpack = require('webpack')
 module.exports = {
   entry: {
     path: './src/main.js'
@@ -18,9 +20,13 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   devtool: 'eval-source-map',
   devServer: {
     contentBase: './build',
-    inline: true
+    inline: true,
+    hot: true
   }
 };
